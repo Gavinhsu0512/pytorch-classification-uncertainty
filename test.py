@@ -1,4 +1,5 @@
 import torch
+import torch
 from torch.autograd import Variable
 import torch.nn.functional as F
 import torchvision.transforms as transforms
@@ -9,7 +10,7 @@ from PIL import Image
 from losses import relu_evidence
 from helpers import rotate_img, one_hot_embedding, get_device
 
-
+@torch.no_grad()
 def test_single_image(model, img_path, uncertainty=False, device=None):
     img = Image.open(img_path).convert("L")
     if not device:
@@ -50,7 +51,10 @@ def test_single_image(model, img_path, uncertainty=False, device=None):
     fig = plt.figure(figsize=[6.2, 5])
     fig, axs = plt.subplots(1, 2, gridspec_kw={"width_ratios": [1, 3]})
 
-    plt.title("Classified as: {}, Uncertainty: {}".format(preds[0], uncertainty.item()))
+    if hasattr(uncertainty, "item"):
+        plt.title("Classified as: {}, Uncertainty: {}".format(preds[0], uncertainty.item()))
+    else:
+        plt.title("Classified as: {}".format(preds[0]))
 
     axs[0].set_title("One")
     axs[0].imshow(img, cmap="gray")
@@ -67,7 +71,7 @@ def test_single_image(model, img_path, uncertainty=False, device=None):
 
     plt.savefig("./results/{}".format(os.path.basename(img_path)))
 
-
+@torch.no_grad()
 def rotating_image_classification(
     model, img, filename, uncertainty=False, threshold=0.5, device=None
 ):
