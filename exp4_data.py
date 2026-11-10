@@ -27,6 +27,7 @@
            最少 minimal：數字正上方一個 3×3 小 x
 
 標籤：0 = 正常畫面，1 = 作弊畫面
+
 另外記錄每張圖的外掛像素位置（mask），用來檢查 local head 的熱力圖有沒有找對地方。
 """
 import numpy as np
