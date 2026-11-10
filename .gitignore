@@ -140,3 +140,5 @@ dmypy.json
 
 # Fashion-MNIST
 data/FashionMNIST/
+
+results/exp4_*.pt

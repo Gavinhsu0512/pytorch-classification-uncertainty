@@ -1,5 +1,4 @@
 import torch
-import torch
 from torch.autograd import Variable
 import torch.nn.functional as F
 import torchvision.transforms as transforms
