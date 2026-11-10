@@ -16,7 +16,7 @@
 
 論文連結：<http://arxiv.org/abs/1806.01768>
 
-收錄於：[Advances in Neural Information Processing Systems 31 (NIPS 2018)](https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018)
+收錄於：[Advances in Neural Information Processing Systems 31 (NeurIPS 2018)](https://proceedings.neurips.cc/paper/2018/hash/a981f2b708044d6fb4a71a1463242520-Abstract.html)
 
 ## 📝 目錄
 
@@ -39,7 +39,7 @@
 
 論文連結：<http://arxiv.org/abs/1806.01768>
 
-收錄於：[Advances in Neural Information Processing Systems 31 (NIPS 2018)](https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018)
+收錄於：[Advances in Neural Information Processing Systems 31 (NeurIPS 2018)](https://proceedings.neurips.cc/paper/2018/hash/a981f2b708044d6fb4a71a1463242520-Abstract.html)
 
 ## 📚 論文摘要
 
@@ -49,9 +49,9 @@
 
 論文原作者：
 
-- [Murat Sensoy](https://papers.nips.cc/author/murat-sensoy-11083)
-- [Lance Kaplan](https://papers.nips.cc/author/lance-kaplan-11084)
-- [Melih Kandemir](https://papers.nips.cc/author/melih-kandemir-11085)
+- Murat Sensoy
+- Lance Kaplan
+- Melih Kandemir
 
 本 repo 程式碼：
 
