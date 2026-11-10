@@ -1,4 +1,5 @@
 import torch
+
 from torchvision.datasets.mnist import MNIST
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
